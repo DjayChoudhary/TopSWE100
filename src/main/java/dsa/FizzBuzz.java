@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FizzBuzz {
-	
+
 	public static List<String> fizzBuzz(int n) {
 		List<String> fizzBuzzList = new ArrayList<>();
 		String answers[] = { "FizzBuzz", "Buzz", "Fizz", "0" };
@@ -18,7 +18,6 @@ public class FizzBuzz {
 			fizzBuzzList.add(answers[index]);
 
 		}
-		// System.out.println(fizzBuzzList);
 
 		return fizzBuzzList;
 
