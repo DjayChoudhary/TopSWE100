@@ -2,20 +2,20 @@ package dsa;
 
 public class ValidPalindrome {
 	public boolean isPalindrome(String s) {
-		
+
 		int left = 0, right = s.length() - 1;
-		
-		while(left < right) {
+
+		while (left < right) {
 			char leftChar = Character.toLowerCase(s.charAt(left));
-			
+
 			char rightChar = Character.toLowerCase(s.charAt(right));
-			
-			if(!Character.isLetterOrDigit(leftChar)) {
+
+			if (!Character.isLetterOrDigit(leftChar)) {
 				left++;
-			} else if(!Character.isLetterOrDigit(rightChar)) {
+			} else if (!Character.isLetterOrDigit(rightChar)) {
 				right--;
 			} else {
-				if(leftChar != rightChar) {
+				if (leftChar != rightChar) {
 					return false;
 				}
 				left++;
